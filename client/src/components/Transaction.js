@@ -9,7 +9,7 @@ export const Transaction = ({ transaction }) => {
       {transaction.text} <span>{transaction.amount}€</span>
       <button
         className='delete-btn'
-        onClick={() => deleteTransaction(transaction.id)}
+        onClick={() => deleteTransaction(transaction._id)}
       >
         x
       </button>
